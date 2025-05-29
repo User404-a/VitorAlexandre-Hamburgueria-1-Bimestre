@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu - Hamburgueria Mr. Burguer</title>
+    <link rel="stylesheet" href="../vitorAlexandre-Hamburgueria-1-bimestre/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <script defer src="../vitorAlexandre-Hamburgueria-1-bimestre/js/script.js"></script>
+    <style>
+        main {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 30px;
+        }
+        #conteudoPrincipal {
+            flex: 1;
+        }
+        #galeriaProdutos {
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            height: fit-content;
+        }
+        #galeriaProdutos img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        #galeriaProdutos button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #galeriaProdutos button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body class="menu">
+    <header class="menu">
+        <h1>Nosso Menu</h1>
+    </header>
+    <main>
+        <section id="conteudoPrincipal">
+            <h2>Escolha seu pedido</h2>
+            <form id="pedidoForm">
+            <p>Selecione os itens e faça seu pedido.</p>    
+                <h1>Alimentos <img src="../vitorAlexandre-Hamburgueria-1-bimestre/img/definitivamentenaoehumhamburguer.png" alt="PNG de Comida" width="25" height="25"> </h1>
+                
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Hambúrguer Clássico","preco":15}'> Hambúrguer Clássico - R$15,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Hambúrguer Duplo","preco":20}'> Hambúrguer Duplo - R$20,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Cheddar Bacon","preco":22}'> Cheddar Bacon - R$22,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Batata Frita","preco":60}'> Hambúrguer de Siri - R$60,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Hambúrguer Vegano","preco":18}'> Hambúrguer Vegano - R$18,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Smash Burger","preco":19}'> Smash Burger - R$19,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Batata Frita","preco":10}'> Batata Frita - R$10,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Onion Rings","preco":12}'> Anéis de Cebola - R$12,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <h1>Molhos<img src="../vitorAlexandre-Hamburgueria-1-bimestre/img/gota.webp" alt="PNG de Molhos" width="25" height="25"></h1>
+                
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Molho Barbecue","preco":2}'> Molho Barbecue - R$2,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+                
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Molho Cheddar","preco":3}'> Molho Cheddar - R$3,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Molho Alho","preco":2}'> Molho de Alho - R$2,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Molho Picante","preco":2}'> Molho Picante - R$2,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <h1>Bebidas<img src="../vitorAlexandre-Hamburgueria-1-bimestre/img/suquin.png" alt="PNG de Bebida" width="25" height="25"></h1>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Coca-Cola Lata 350ml","preco":7}'> Coca-Cola Lata 350ml - R$7,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Guaraná Antarctica Lata 350ml","preco":7}'> Guaraná Antarctica Lata 350ml - R$7,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Pepsi 600ml","preco":9}'> Pepsi 600ml - R$9,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Sprite 1L","preco":12}'> Sprite 1L - R$12,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Fanta Uva 2L","preco":15}'> Fanta Uva 2L - R$15,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Milkshake","preco":12}'> Milkshake - R$12,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Suco Natural","preco":8}'> Suco Natural - R$8,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <label>
+                    <input type="checkbox" name="item" value='{"nome":"Água com Gás","preco":5}'> Água com Gás - R$5,00
+                    <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
+                </label><br>
+            
+                <br>
+                <button type="submit">Confirmar Pedido</button>
+            </form>
+            
+        </section>
+
+        <section id="galeriaProdutos">
+            <h2>Exemplos:</h2>
+            <div id="produtoExibido" style="margin-bottom: 15px;">
+                <img id="imagemProduto" src="../vitorAlexandre-Hamburgueria-1-bimestre/img/sorvete1.png" alt="Sorvete de Baunilha" width="180" height="150" />
+                <h3 id="nomeProduto" style="margin: 10px 0 5px;">Sorvete de Baunilha</h3>
+                <p id="precoProduto" style="font-weight: bold;">R$ 7,00</p>
+            </div>
+            <button id="btnAnterior">← Anterior</button>
+            <button id="btnProximo">Próximo →</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hamburgueria Mr. Burguer</p>
+    </footer>
+
+    <script>
+        document.addEventListener(() => {
+            const produtos = [
+                { nome: "Cheddar Bacon", preco: 22.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/cheddar.png" },
+                { nome: "Smash Burger", preco: 19.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/smash.png" },
+                { nome: "Batata Frita ", preco: 10.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/batata.png" },
+                { nome: "Coca-Cola Lata 350ml", preco: 7.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/refrigerante.png" },
+                { nome: "Milkshake", preco: 12.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/milkshake.png" }
+            ];
+
+            let indiceAtual = 0;
+
+            const imgEl = document.getElementById('imagemProduto');
+            const nomeEl = document.getElementById('nomeProduto');
+            const precoEl = document.getElementById('precoProduto');
+
+            function mostrarProduto(indice) {
+                const produto = produtos[indice];
+                imgEl.src = produto.img;
+                imgEl.alt = produto.nome;
+                nomeEl.textContent = produto.nome;
+                precoEl.textContent = `R$ ${produto.preco.toFixed(2)}`;
+            }
+
+            document.getElementById('btnAnterior').addEventListener('click', () => {
+                indiceAtual--;
+                if (indiceAtual < 0) indiceAtual = produtos.length - 1;
+                mostrarProduto(indiceAtual);
+            });
+
+            document.getElementById('btnProximo').addEventListener('click', () => {
+                indiceAtual++;
+                if (indiceAtual >= produtos.length) indiceAtual = 0;
+                mostrarProduto(indiceAtual);
+            });
+
+            mostrarProduto(indiceAtual);
+        });
+    </script>
+</body>
+</html>

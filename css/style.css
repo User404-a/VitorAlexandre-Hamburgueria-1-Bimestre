@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -135,4 +134,44 @@ button.voltar {
 
 button.voltar:hover {
     background-color: #2471a3;
+}
+
+#qrcode {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: max-content;
+}
+
+button.confirmar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+
+#galeriaProdutos {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    height: fit-content;
+}
+
+#galeriaProdutos button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#galeriaProdutos button:hover {
+    background-color: #c0392b;
 }
