@@ -76,11 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const produtos = [
-        { nome: "Cheddar Bacon", preco: 22.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/cheddar.png" },
-        { nome: "Smash Burger", preco: 19.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/smash.png" },
-        { nome: "Batata Frita", preco: 12.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/batata.png" },
-        { nome: "Coca-Cola Lata 350ml", preco: 7.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/refrigerante.png" },
-        { nome: "Milkshake", preco: 12.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/milkshake.png" }
+        { nome: "Cheddar Bacon", preco: 22.00, img: "./img/cheddar.png" },
+        { nome: "Smash Burger", preco: 19.00, img: "./img/smash.png" },
+        { nome: "Batata Frita", preco: 12.00, img: "./img/batata.png" },
+        { nome: "Coca-Cola Lata 350ml", preco: 7.00, img: "./img/refrigerante.png" },
+        { nome: "Milkshake", preco: 12.00, img: "./img/milkshake.png" }
     ];
 
     let indiceAtual = 0;

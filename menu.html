@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Menu - Hamburgueria Mr. Burguer</title>
-    <link rel="stylesheet" href="../vitorAlexandre-Hamburgueria-1-bimestre/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-    <script defer src="../vitorAlexandre-Hamburgueria-1-bimestre/js/script.js"></script>
+    <script defer src="./js/script.js"></script>
     <style>
         main {
             display: flex;
@@ -55,7 +55,7 @@
             <h2>Escolha seu pedido</h2>
             <form id="pedidoForm">
             <p>Selecione os itens e faça seu pedido.</p>    
-                <h1>Alimentos <img src="../vitorAlexandre-Hamburgueria-1-bimestre/img/definitivamentenaoehumhamburguer.png" alt="PNG de Comida" width="25" height="25"> </h1>
+                <h1>Alimentos <img src="./img/definitivamentenaoehumhamburguer.png" alt="PNG de Comida" width="25" height="25"> </h1>
                 
                 <label>
                     <input type="checkbox" name="item" value='{"nome":"Hambúrguer Clássico","preco":15}'> Hambúrguer Clássico - R$15,00
@@ -97,7 +97,7 @@
                     <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
                 </label><br>
             
-                <h1>Molhos<img src="../vitorAlexandre-Hamburgueria-1-bimestre/img/gota.webp" alt="PNG de Molhos" width="25" height="25"></h1>
+                <h1>Molhos<img src="./img/gota.webp" alt="PNG de Molhos" width="25" height="25"></h1>
                 
                 <label>
                     <input type="checkbox" name="item" value='{"nome":"Molho Barbecue","preco":2}'> Molho Barbecue - R$2,00
@@ -119,7 +119,7 @@
                     <input type="number" name="quantidade" class="quantidade" min="1" value="1" style="display:none">
                 </label><br>
             
-                <h1>Bebidas<img src="../vitorAlexandre-Hamburgueria-1-bimestre/img/suquin.png" alt="PNG de Bebida" width="25" height="25"></h1>
+                <h1>Bebidas<img src="./img/suquin.png" alt="PNG de Bebida" width="25" height="25"></h1>
             
                 <label>
                     <input type="checkbox" name="item" value='{"nome":"Coca-Cola Lata 350ml","preco":7}'> Coca-Cola Lata 350ml - R$7,00
@@ -170,7 +170,7 @@
         <section id="galeriaProdutos">
             <h2>Exemplos:</h2>
             <div id="produtoExibido" style="margin-bottom: 15px;">
-                <img id="imagemProduto" src="../vitorAlexandre-Hamburgueria-1-bimestre/img/sorvete1.png" alt="Sorvete de Baunilha" width="180" height="150" />
+                <img id="imagemProduto" src="./img/sorvete1.png" alt="Sorvete de Baunilha" width="180" height="150" />
                 <h3 id="nomeProduto" style="margin: 10px 0 5px;">Sorvete de Baunilha</h3>
                 <p id="precoProduto" style="font-weight: bold;">R$ 7,00</p>
             </div>
@@ -185,11 +185,11 @@
     <script>
         document.addEventListener(() => {
             const produtos = [
-                { nome: "Cheddar Bacon", preco: 22.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/cheddar.png" },
-                { nome: "Smash Burger", preco: 19.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/smash.png" },
-                { nome: "Batata Frita ", preco: 10.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/batata.png" },
-                { nome: "Coca-Cola Lata 350ml", preco: 7.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/refrigerante.png" },
-                { nome: "Milkshake", preco: 12.00, img: "../vitorAlexandre-Hamburgueria-1-bimestre/img/milkshake.png" }
+                { nome: "Cheddar Bacon", preco: 22.00, img: "./img/cheddar.png" },
+                { nome: "Smash Burger", preco: 19.00, img: "./img/smash.png" },
+                { nome: "Batata Frita ", preco: 10.00, img: "./img/batata.png" },
+                { nome: "Coca-Cola Lata 350ml", preco: 7.00, img: "./img/refrigerante.png" },
+                { nome: "Milkshake", preco: 12.00, img: "./img/milkshake.png" }
             ];
 
             let indiceAtual = 0;
